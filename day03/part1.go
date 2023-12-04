@@ -38,8 +38,8 @@ func main() {
 	}
 
 	// Iterate through each line, identify numeric sequences, and check
-	// if they qualify as part numbers. If they qualify, convert it to
-	// an integer and accumulate it to the sum.
+	// if they qualify as part numbers. If they qualify, convert them to
+	// an integer and accumulate them to the sum.
 	for scanner2.Scan() {
 		line := scanner2.Text()
 		locs := numberRegex.FindAllStringIndex(line, -1)
